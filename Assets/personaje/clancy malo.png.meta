@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clancy malo_0: -2336638898940033549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

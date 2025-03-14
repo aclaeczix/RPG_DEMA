@@ -3065,9 +3065,9 @@ Transform:
   - {fileID: 782019871}
   - {fileID: 673152998}
   - {fileID: 1962456743}
+  - {fileID: 401644709}
   - {fileID: 1270639596}
   - {fileID: 957356114}
-  - {fileID: 401644709}
   - {fileID: 202645331}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10904,7 +10904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401644709}
   m_Layer: 0
-  m_Name: Esc4 Obj
+  m_Name: Esc2 Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40690,7 +40690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957356114}
   m_Layer: 0
-  m_Name: Esc3 Obj
+  m_Name: Esc4 Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46891,9 +46891,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 722152099}
-  - {fileID: 1221378132}
-  - {fileID: 1998314948}
   - {fileID: 1409493375}
+  - {fileID: 1998314948}
+  - {fileID: 1221378132}
   - {fileID: 133531473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50524,7 +50524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221378132}
   m_Layer: 0
-  m_Name: Escenario 2
+  m_Name: Escenario 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51671,7 +51671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1270639596}
   m_Layer: 0
-  m_Name: Esc2 Obj
+  m_Name: Esc3 Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55321,7 +55321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409493375}
   m_Layer: 0
-  m_Name: Escenario 4
+  m_Name: Escenario 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64636,7 +64636,7 @@ Transform:
   m_GameObject: {fileID: 1735612734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -0.14, z: 0}
+  m_LocalPosition: {x: 0.642, y: -0.18, z: 0}
   m_LocalScale: {x: 0.6577, y: 0.6057, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

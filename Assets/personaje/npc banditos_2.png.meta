@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      npc banditos_2_0: 1660385611206598474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

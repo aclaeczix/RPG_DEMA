@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6b1f379f63274e48a155f37f1e1742e
+guid: f931430809fd73745b76b92d5fca2598
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6405133710823166854
-    second: clancy_0
+      213: 1052911619421456253
+    second: Clancy abajo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clancy_0
+      name: Clancy abajo_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 7
-        width: 78
-        height: 162
+        x: 99
+        y: 19
+        width: 70
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6839e749c2b93e850800000000000000
-      internalID: 6405133710823166854
+      spriteID: d774f7f0a81bc9e00800000000000000
+      internalID: 1052911619421456253
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      clancy_0: 6405133710823166854
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clancybac_2_0: 8164008253763298360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

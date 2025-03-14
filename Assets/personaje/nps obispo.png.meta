@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nps obispo_0: -3755532472084081856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

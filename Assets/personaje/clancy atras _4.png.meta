@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clancy atras _4_0: -266384830869143331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
