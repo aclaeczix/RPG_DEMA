@@ -25,7 +25,7 @@ public class MovPlayer : MonoBehaviour
         float movY = Input.GetAxisRaw("Vertical");
         Debug.Log($"movX: {movX}, movY: {movY}"); // ← Ver valores en la consola
         dirMov = new Vector2(movX, movY).normalized;
-        rb.velocity = new Vector2(dirMov.x * velMov, dirMov.y * velMov);
+        rb.linearVelocity = new Vector2(dirMov.x * velMov, dirMov.y * velMov);
 
 
         if (movX == 0 && movY == 0) { //Idle

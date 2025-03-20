@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 3
   tags:
   - portal1
+  - portal2
+  - portal3
+  - portal4
+  - portal5
+  - portal6
+  - portal7
+  - portal8
+  - portal9
   layers:
   - Default
   - TransparentFX

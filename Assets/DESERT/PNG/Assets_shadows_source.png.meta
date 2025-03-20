@@ -219,6 +219,84 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1159,7 +1237,49 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Assets_shadows_source_0: -8806962755674991957
+      Assets_shadows_source_1: 3354691314046889806
+      Assets_shadows_source_10: 5573085557494944145
+      Assets_shadows_source_11: -4629311637155237573
+      Assets_shadows_source_12: 8127536519092433436
+      Assets_shadows_source_13: -8471071945318451007
+      Assets_shadows_source_14: 5111673192858560025
+      Assets_shadows_source_15: -9073166530062799601
+      Assets_shadows_source_16: 7067997610771087534
+      Assets_shadows_source_17: -9120698388277966048
+      Assets_shadows_source_18: -6029768832141947732
+      Assets_shadows_source_19: -7703071508354218534
+      Assets_shadows_source_2: -1655667030208692731
+      Assets_shadows_source_20: -514527153843604008
+      Assets_shadows_source_21: -603453187100974954
+      Assets_shadows_source_22: -4015296165680083347
+      Assets_shadows_source_23: -7746271397613686916
+      Assets_shadows_source_24: -6198196476285206586
+      Assets_shadows_source_25: 932964970305156205
+      Assets_shadows_source_26: -8369436795361399876
+      Assets_shadows_source_27: 1799653898552598891
+      Assets_shadows_source_28: 2456177354554190087
+      Assets_shadows_source_29: -4908256494685016999
+      Assets_shadows_source_3: 4227840528301109906
+      Assets_shadows_source_30: -5046131874957076541
+      Assets_shadows_source_31: -476741610169176807
+      Assets_shadows_source_32: -2818210616480929087
+      Assets_shadows_source_33: -7928707496131403319
+      Assets_shadows_source_34: 8556536699284743587
+      Assets_shadows_source_35: 2456253075195005165
+      Assets_shadows_source_36: -4415854315905019641
+      Assets_shadows_source_37: -2089232316139112504
+      Assets_shadows_source_38: 3334407729204714011
+      Assets_shadows_source_39: 4229168770913335099
+      Assets_shadows_source_4: 7065431465398234353
+      Assets_shadows_source_40: -7645718018341686621
+      Assets_shadows_source_41: -5723400004210046400
+      Assets_shadows_source_5: 899204052059024665
+      Assets_shadows_source_6: 1837762814803008893
+      Assets_shadows_source_7: -5017450342056199501
+      Assets_shadows_source_8: 5131661783313467910
+      Assets_shadows_source_9: 1187081064589072222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
