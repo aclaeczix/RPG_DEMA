@@ -68,5 +68,8 @@ TagManager:
   - name: NPC
     uniqueID: 3409670515
     locked: 0
+  - name: enemigo
+    uniqueID: 2792042181
+    locked: 0
   m_RenderingLayers:
   - Default
