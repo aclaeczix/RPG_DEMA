@@ -46,7 +46,7 @@ public class MovCamara : MonoBehaviour
         {
             posicionCamara = new Vector3(-5.28f, -13.93f, -6);
             posicionPlayer = new Vector3(-7.276f, -13.23f, 0);
-            cameraBounds = new Rect(-4.5f, -15.15f, 9f, 6.3f);
+            cameraBounds = new Rect(-4.5f, -16.9f, 9.5f, 7.05f);
         }
         if (obj.gameObject.CompareTag("portal2"))
         {
@@ -64,7 +64,7 @@ public class MovCamara : MonoBehaviour
         {
             posicionCamara = new Vector3(-1.322001f, -8.352998f, -6);
             posicionPlayer = new Vector3(-1.422f, -8.553f, 0);
-            cameraBounds = new Rect(-4.5f, -15.15f, 9f, 6.3f);
+            cameraBounds = new Rect(-4.5f, -16.9f, 9.5f, 7.05f);
         }
         if (obj.gameObject.CompareTag("portal5"))
         {
