@@ -13,6 +13,8 @@ TagManager:
   - portal7
   - portal8
   - portal9
+  - Limites
+  - Enemigos
   layers:
   - Default
   - TransparentFX
