@@ -7,13 +7,21 @@ public class MovPlayer : MonoBehaviour
     public Rigidbody2D rb;
     public Animator anim;
 
-
     private string capaIdle = "Idle";
     private string capaCaminar = "Caminar";
     private bool PlayerMoviendose = false;
     private float ultimoMovX, ultimoMovY;
 
     public static int dirAtaque = 0;
+
+    // NUEVO: AudioSource para sonido de caminar
+    public AudioSource audioCaminar;
+
+    void Start()
+    {
+        if (audioCaminar == null)
+            audioCaminar = GetComponent<AudioSource>();
+    }
 
     void FixedUpdate()
     {
@@ -23,38 +31,24 @@ public class MovPlayer : MonoBehaviour
             Animacionesplayer();
         }
     }
+
     private void Movimiento()
     {
         float movX = Input.GetAxisRaw("Horizontal");
         float movY = Input.GetAxisRaw("Vertical");
-        Debug.Log($"movX: {movX}, movY: {movY}"); // Ver valores en la consola
+        Debug.Log($"movX: {movX}, movY: {movY}");
 
         dirMov = new Vector2(movX, movY).normalized;
-        rb.linearVelocity = new Vector2(dirMov.x * velMov, dirMov.y * velMov); // Usar rb.velocity en lugar de rb.linearVelocity
+        rb.linearVelocity = new Vector2(dirMov.x * velMov, dirMov.y * velMov);
 
-        // Actualizar dirAtaque basado en la dirección horizontal (movX)
-        if (movX == -1)
-        {
-            dirAtaque = 3;  // Mover hacia la izquierda
-        }
-        else if (movX == 1)
-        {
-            dirAtaque = 4;  // Mover hacia la derecha
-        }
+        if (movX == -1) dirAtaque = 3;
+        else if (movX == 1) dirAtaque = 4;
 
-        // Aquí también puedes manejar dirAtaque para los movimientos verticales si es necesario
-        if (movY == 1)
-        {
-            dirAtaque = 1;  // Mover hacia arriba
-        }
-        else if (movY == -1)
-        {
-            dirAtaque = 2;  // Mover hacia abajo
-        }
+        if (movY == 1) dirAtaque = 1;
+        else if (movY == -1) dirAtaque = 2;
 
         Debug.Log("dirAtaque actualizado a: " + dirAtaque);
 
-        // Comprobamos si el jugador está en reposo (Idle) o moviéndose
         if (movX == 0 && movY == 0)
         {
             PlayerMoviendose = false;
@@ -66,10 +60,20 @@ public class MovPlayer : MonoBehaviour
             ultimoMovY = movY;
         }
 
+        // Aquí controlamos el audio
+        if (PlayerMoviendose)
+        {
+            if (!audioCaminar.isPlaying)
+                audioCaminar.Play();
+        }
+        else
+        {
+            if (audioCaminar.isPlaying)
+                audioCaminar.Stop();
+        }
+
         ActualizarCapa();
     }
-
-
 
     private void Animacionesplayer()
     {
@@ -79,7 +83,6 @@ public class MovPlayer : MonoBehaviour
 
     private void ActualizarCapa()
     {
-
         if (CCC.atacando == false && CAD.disparando == false)
         {
             if (PlayerMoviendose)
@@ -104,9 +107,8 @@ public class MovPlayer : MonoBehaviour
     {
         for (int i = 0; i < anim.layerCount; i++)
         {
-            anim.SetLayerWeight(i, 0); //Ambos layes con weight en 0
+            anim.SetLayerWeight(i, 0);
         }
         anim.SetLayerWeight(anim.GetLayerIndex(nombre), 1);
     }
-
 }

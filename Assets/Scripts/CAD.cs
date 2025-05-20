@@ -55,11 +55,37 @@ public class CAD : MonoBehaviour
         }
     }
 
-private void EmiteProyectil()
+    private void EmiteProyectil()
     {
         dirDisparo = MovPlayer.dirAtaque;
-        Instantiate(proyectil, puntoEmision.position, transform.rotation);
+        GameObject proyectilInstanciado = Instantiate(proyectil, puntoEmision.position, transform.rotation);
+
+        // Obtén el Animator del proyectil instanciado
+        Animator proyectilAnimator = proyectilInstanciado.GetComponent<Animator>();
+
+        // Asignar la dirección de disparo al proyectil
+        if (dirDisparo == 1)  // Arriba
+        {
+            proyectilAnimator.SetFloat("MovX", 0);   // Cambiado a MovX
+            proyectilAnimator.SetFloat("MovY", 1);   // Cambiado a MovY
+        }
+        else if (dirDisparo == 2)  // Abajo
+        {
+            proyectilAnimator.SetFloat("MovX", 0);   // Cambiado a MovX
+            proyectilAnimator.SetFloat("MovY", -1);  // Cambiado a MovY
+        }
+        else if (dirDisparo == 3)  // Izquierda
+        {
+            proyectilAnimator.SetFloat("MovX", -1);  // Cambiado a MovX
+            proyectilAnimator.SetFloat("MovY", 0);   // Cambiado a MovY
+        }
+        else if (dirDisparo == 4)  // Derecha
+        {
+            proyectilAnimator.SetFloat("MovX", 1);   // Cambiado a MovX
+            proyectilAnimator.SetFloat("MovY", 0);   // Cambiado a MovY
+        }
     }
+
 
     private void activaCapaCAD(string nombre)
     {

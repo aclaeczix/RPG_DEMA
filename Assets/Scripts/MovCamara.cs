@@ -12,10 +12,16 @@ public class MovCamara : MonoBehaviour
     // Variables para configurar los límites de la cámara en cada portal
     private Rect cameraBounds;  // Aquí se guardan los límites de la cámara
 
+    public AudioController audioController;  // Referencia al AudioController
+
     private void Start()
     {
         // Establecer los límites del mapa principal cuando comienza el juego
-        cameraBounds = new Rect(-4.5f, -3.1f, 9f, 6.24f);  // (X min, Y min, ancho, altura)
+        cameraBounds = new Rect(-4.5f, -3.1f, 9f, 6.24f);
+
+        // Avisar al audioController la posición inicial para activar audio correcto
+        if (audioController != null)
+            audioController.ActualizarAudioPorPosicion(target.position);
     }
 
     private void Update()
@@ -99,6 +105,10 @@ public class MovCamara : MonoBehaviour
 
         // Mover la cámara y al jugador a la nueva posición
         MoverCamaraYJugador(posicionCamara, posicionPlayer);
+
+        // Avisar al audioController del cambio de posición para actualizar audio
+        if (audioController != null)
+            audioController.ActualizarAudioPorPosicion(posicionPlayer);
     }
 
     private void MoverCamaraYJugador(Vector3 posicionCamara, Vector3 posicionPlayer)

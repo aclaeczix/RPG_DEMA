@@ -15,6 +15,20 @@ TagManager:
   - portal9
   - Limites
   - Enemigos
+  - Boss
+  - Vida
+  - Mana
+  - Pan
+  - GoldenCoin
+  - Llave
+  - Totem
+  - SilverCoin
+  - Iron
+  - Cloth
+  - Ring
+  - Hierbas
+  - Lazo
+  - Piel
   layers:
   - Default
   - TransparentFX
@@ -72,6 +86,9 @@ TagManager:
     locked: 0
   - name: enemigo
     uniqueID: 2792042181
+    locked: 0
+  - name: Coleccionables
+    uniqueID: 278194887
     locked: 0
   m_RenderingLayers:
   - Default

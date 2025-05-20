@@ -26,7 +26,6 @@ public class DisparaProyectil : MonoBehaviour
             transform.position += new Vector3(1, 0, 0) * Time.deltaTime * velocidad;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Limites")
@@ -36,8 +35,17 @@ public class DisparaProyectil : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemigos")
         {
+            // Asegúrate de que el objeto que recibe el daño tenga el script Enemigo
             collision.transform.GetComponent<Enemigo>().TomarDaño(1); // Aplicar daño al enemigo
             Destroy(this.gameObject);  // Destruir el proyectil al impactar con el enemigo
         }
+
+        if (collision.gameObject.tag == "Boss")
+        {
+            // Asegúrate de que el objeto que recibe el daño tenga el script Boss
+            collision.transform.GetComponent<Boss>().TomarDaño(1); // Aplicar daño al boss
+            Destroy(this.gameObject);  // Destruir el proyectil al impactar con el boss
+        }
     }
+
 }
